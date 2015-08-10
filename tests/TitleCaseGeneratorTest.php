@@ -31,17 +31,17 @@
             $this->assertEquals("The Little Mermaid", $result);
         }
 
-        function test_makeTitleCase_specialWords()
+        function test_makeTitleCase_uppercaseWords()
         {
             //Arrange
             $test_TitleCaseGenerator = new TitleCaseGenerator;
-            $input = "beowulf from brighton beach";
+            $input = "BEOWULF ON THE ROCKS";
 
             //Act
             $result = $test_TitleCaseGenerator->makeTitleCase($input);
 
             //Assert
-            $this->assertEquals("Beowulf from Brighton Beach", $result);
+            $this->assertEquals("Beowulf on the Rocks", $result);
         }
 
     }
