@@ -22,13 +22,13 @@
         {
             //Arrange
             $test_TitleCaseGenerator = new TitleCaseGenerator;
-            $input = "the little mermaid";
+            $input = "little mermaid";
 
             //Act
             $result = $test_TitleCaseGenerator->makeTitleCase($input);
 
             //Assert
-            $this->assertEquals("The Little Mermaid", $result);
+            $this->assertEquals("Little Mermaid", $result);
         }
 
         function test_makeTitleCase_uppercaseWords()
@@ -42,6 +42,19 @@
 
             //Assert
             $this->assertEquals("Beowulf on the Rocks", $result);
+        }
+
+        function test_makeTitleCase_firstWord()
+        {
+            //Arrange
+            $test_TitleCaseGenerator = new TitleCaseGenerator;
+            $input = "the little mermaid";
+
+            //Act
+            $result = $test_TitleCaseGenerator->makeTitleCase($input);
+
+            //Assert
+            $this->assertEquals("The Little Mermaid", $result);
         }
 
     }
