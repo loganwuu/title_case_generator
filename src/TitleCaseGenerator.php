@@ -8,6 +8,9 @@
             $output_titlecased = array();
             foreach ($input_array_of_words as $word) {
                 array_push($output_titlecased, ucfirst($word));
+                while ($word == "From") {
+                    $word = strtolower($word);
+                }
             }
             return implode(" ", $output_titlecased);
         }
