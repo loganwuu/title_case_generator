@@ -1,0 +1,23 @@
+#1
+Capitalizes the first letter of a single word: e.g. "beowulf" -> "Beowulf".
+
+#2
+Capitalizes the first letter of a multiple word string: e.g. "beowulf begins" -> "Beowulf Begins".
+
+#3
+Does not capitalize designated words like prepositions, conjunctions, etc.: e.g. "beowulf from brighton beach" -> "Beowulf from Brighton Beach".
+
+#4
+Capitalizes designated words if they are the first word: e.g. "from beowulf to the hulk" -> "From Beowulf to the Hulk".
+
+#5
+Handles non-letter characters: e.g. "57 beowulf alternative endings!!" -> "57 Beowulf Alternative  Endings!!"
+
+#6
+Manages all uppercase entries: e.g. "BEOWULF ON THE ROCKS" -> "Beowulf on the Rocks".
+
+#7
+Manages mixed case entries: e.g "BeoWulf aNd mE" -> "Beowulf and Me".
+
+#8
+Manages unique case entries: e.g. "here's to beowulf and McDuff and O'Malley" -> "Here's to Beowulf and McDuff and O'Malley".
